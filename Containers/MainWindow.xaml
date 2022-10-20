@@ -1,0 +1,70 @@
+﻿<Window x:Class="Containers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Containers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<StackPanel x:Name="stackPanel" Orientation="Horizontal">
+        <Button Width="100" FontSize="42">1</Button>
+        <Button Width="100" FontSize="42">2</Button>
+        <Button Width="100" FontSize="42">3</Button>
+    </StackPanel>-->
+
+
+    <!--<WrapPanel Orientation="Vertical">
+        <Button Width="100" FontSize="42">1</Button>
+        <Button Width="100" FontSize="42">2</Button>
+        <Button Width="100" FontSize="42">3</Button>
+    </WrapPanel>-->
+
+
+    <!--<DockPanel>
+        <Button DockPanel.Dock="Bottom" FontSize="42" Background="MediumPurple" Content="Footer"/>
+        <Button DockPanel.Dock="Top" FontSize="42" Background="BlanchedAlmond" >Header</Button>
+
+        <StackPanel DockPanel.Dock="Left" Background="DarkOliveGreen">
+            <Button  FontSize="24">Aside</Button>
+            <Button  FontSize="24">Aside</Button>
+        </StackPanel>
+
+        <Grid DockPanel.Dock="Top" Background="GreenYellow">
+            <Button FontSize="42">Content</Button>
+        </Grid>
+    </DockPanel>-->
+
+
+
+    <!--<Canvas>
+        <Button Canvas.Left="0" Canvas.Top="0" FontSize="42">Click me 1</Button>
+        <Button Canvas.Right="0" Canvas.Top="0" FontSize="42">Click me 2</Button>
+        <Button Canvas.Left="0" Canvas.Bottom="0" FontSize="42">Click me 3</Button>
+        
+        <Button Canvas.Right="0" Canvas.Bottom="0"  Panel.ZIndex="2"  FontSize="42">Click me 4</Button>
+        <Button Canvas.Right="0" Canvas.Bottom="0"  Panel.ZIndex="1"  FontSize="42">Click me 5</Button>
+    </Canvas>-->
+
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Red"></Button>
+        <Button Grid.Column="21" Grid.Row="0" Grid.RowSpan="2" Background="Green"></Button>
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Background="Blue"></Button>
+    </Grid>
+
+
+</Window>
